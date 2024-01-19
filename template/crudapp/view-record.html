@@ -1,0 +1,42 @@
+{% extends 'crudapp/base.html'%}
+{% block content %}
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#ID</th>
+                  <th>NAME</th>
+                  <th>EMAIL</th>
+                  <TH>PHONE</TH>
+                  <th>ADDRESS</th>
+                  <th>CITY</th>
+                  <th>STATE</th>
+                  <th>COUNTRY</th>
+                </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td>{{record.id}}</td>
+                <td>{{record.name}}</td>
+                <td>{{record.email}}</td>
+                <td>{{ record.phone}}</td>
+                <td>{{record.address}}</td>
+                <td>{{ record.city}}</td>
+                <td>{{record.state}}</td>
+                <td>{{record.country}}</td>    
+                </tbody>
+            </table>
+            <a class="btn btn-warning" href= "{% url 'update-record' record.id %}"> Update</a>
+            &nbsp;
+            <a class="btn btn-danger" href="{% url 'delete' record.id %}">Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+{% endblock %} 

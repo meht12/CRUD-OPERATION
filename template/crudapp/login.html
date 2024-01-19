@@ -1,0 +1,18 @@
+{% extends 'crudapp/base.html'%}
+{% block content%}
+<body>
+    <div class="text-center" aut>
+        <h3> Login to your account </h3>
+        <br>
+        <form method="post" autocomplete="off">
+            {% csrf_token %}
+            {{form.as_p}}
+            <br>
+         <button type="submit" class="btn btn-primary" name="submit">Login Now</button>
+         <br>
+         <br>
+         <p>Don't Have an account ? <span> <a href="/register">Create  Here</a></span> </p>
+        </form>
+    </div>
+</body>
+{%  endblock %}

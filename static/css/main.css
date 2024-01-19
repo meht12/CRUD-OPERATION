@@ -1,0 +1,64 @@
+#form-layout{
+    border-radius: 15px;
+    width: 450px;
+}
+
+/* create record */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* .container {
+    width: 50%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* signout css */
+#nav-itm{
+    float:right;
+}
+.spn{
+    color: steelblue;
+}
+/* update record dynamic name  */
+.name{
+    padding: 1px 13px;
+}
